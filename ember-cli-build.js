@@ -6,9 +6,14 @@ module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     'ember-bootstrap': {
       'bootstrapVersion': 4,
-      'importBootstrapCSS': true
+      'importBootstrapCSS': true,
+      'ember-google-maps': {
+        only: ['marker', 'info-window']
+        // except: ['overlay']
+      }
     }
   });
+  
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
