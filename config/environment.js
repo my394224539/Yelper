@@ -54,7 +54,7 @@ module.exports = function(environment) {
   ENV['ember-google-maps'] = {
     key: "AIzaSyDF9xoElLGQKXzhhgebTtVOzV3HDnxVGI4", // Using .env files in this example
     language: 'en',
-    region: 'GB',
+    region: 'US',
     protocol: 'https',
     version: '3.35',
     libraries: ['geometry', 'places'], // Optional libraries

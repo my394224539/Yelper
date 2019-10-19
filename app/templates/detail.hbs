@@ -13,7 +13,9 @@
             <div class="card-body">
             <div class="card-text">Rating: {{model.rating}}</div>
             <small>From 1-5</small>
-            {{g-map lat="51.508530" lng="-0.076132" zoom=12}} {{!-- lat="{{model.coordinates.latitude}}" lng="{{model.coordinates.latitude}}" --}}
+            {{#g-map lat = model.coordinates.latitude lng = model.coordinates.longitude zoom=12 as |g|}}
+                {{g.marker lat=model.coordinates.latitude lng=model.coordinates.longitude}}
+            {{/g-map}}
             </div>
         </div>
     </form>
