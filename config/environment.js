@@ -6,6 +6,11 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
+    apollo: {
+      apiURL: '/api'
+      // apiURL:
+      //   'http://node-express-env.zqxi3wpmdm.us-east-2.elasticbeanstalk.com/yelp'
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

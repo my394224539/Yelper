@@ -1,0 +1,20 @@
+<body class="background">
+    <form>
+        <div class="card" style="width: 30rem;">
+            <a href="{{model.url}}"><img src="{{model.photos}}" class="card-img-top" alt="images"></a>
+            <div class="card-body">
+            <h5 class="card-title">{{model.name}}</h5>
+            <div class="card-text">Address: {{model.location.formatted_address}}</div>
+            <div class="card-text">Phone: {{model.display_phone}}</div>
+            <div class="card-text">Price: {{model.price}}</div>
+            <small>1 = $, 2 = $$, 3 = $$$, 4 = $$$$</small>
+            </div>
+            <hr class="my-4">
+            <div class="card-body">
+            <div class="card-text">Rating: {{model.rating}}</div>
+            <small>From 1-5</small>
+            </div>
+        </div>
+    </form>
+</body>
+{{outlet}}

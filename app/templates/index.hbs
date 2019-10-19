@@ -1,0 +1,25 @@
+<div class="jumbotron rounded-0 jumbotron-background-image text-center ">
+  <h1 class="display-4 animated tada"><b>Wassup!</b></h1>
+  <p><b>Welcome to Wassup!</b></p>
+  <hr class="my-4">
+  <div class="row">
+    <div class="col-md-4">
+    <label><b>Restaurants</b></label>
+    <Input class="form-control" placeholder="Your favorite restaurant" @value={{term}} />
+    </div>
+    <div class="col-md-4">
+    <label><b>Location</b></label>
+    <Input class="form-control" placeholder="location nearby you" @value={{location}} />
+    </div>
+    <div class="col-md-4">
+    <label><b>Price</b></label>
+    <Input class="form-control" placeholder="1 = $, 2 = $$, 3 = $$$, 4 = $$$$" @value={{price}} />
+    </div>        
+    </div>
+</div>
+<div class="container text-center">
+  {{#each model.business as |business|}}
+  <LinkTo style="text-decoration:none" @route='detail' @model={{business.id}}><h1>{{business.name}}</h1></LinkTo><br>
+  {{/each}}
+</div> 
+{{outlet}}
