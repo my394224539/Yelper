@@ -8,6 +8,7 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('detail',{ path: '/detail/:id' });
+  this.route('favorites');
 });
 
 export default Router;

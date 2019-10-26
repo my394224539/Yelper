@@ -6,19 +6,16 @@ export default Controller.extend({
   term: null,location:null,price:null,
   actions: {
     updateTerm() {
-      debugger;
       throttle(() => {
         this.set('term');
       }, 1000);
     },
     updateLocation() {
-        debugger;
         throttle(() => {
           this.set('location');
         }, 1000);
     },
       updatePrice() {
-        debugger;
         throttle(() => {
           this.set('price');
         }, 1000);

@@ -6,6 +6,15 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
+    firebase: {
+      apiKey: "AIzaSyBLnLNY8yTo_sQNfiXVLVGjjJdCmmNrQvU",
+      authDomain: "yelp-favorites-e598f.firebaseapp.com",
+      databaseURL: "https://yelp-favorites-e598f.firebaseio.com",
+      projectId: "yelp-favorites-e598f",
+      storageBucket: "yelp-favorites-e598f.appspot.com",
+      messagingSenderId: "996785701477",
+      appId: "1:996785701477:web:ef919b24a2e593024dbc8c"
+    },
     apollo: {
       apiURL: '/api'
       // apiURL:

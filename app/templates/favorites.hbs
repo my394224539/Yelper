@@ -1,0 +1,18 @@
+
+<h1 class='text-center'>Favorites</h1>
+{{#each model as |favorite|}}
+<form class="favorite-form">
+<div class="card" style="width: 22rem;">
+  <LinkTo @route='detail' @model={{favorite.yelpid}}><img src="{{favorite.photo}}" class="card-img-top" alt="images"></LinkTo>
+  <div class="card-body">
+    <h5 class="card-title">{{favorite.name}}</h5>
+    <div class="card-text">Address: {{favorite.address}}</div>
+    <div class="card-text">Phone: {{favorite.phone}}</div>
+  </div>
+</div>
+</form>
+{{else}}
+  <form class="favorite-form"><h3 class='text-center'><b>Nothing is your favorite!!!</b></h3></form>
+{{/each}}
+
+{{outlet}}
