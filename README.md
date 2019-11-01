@@ -37,4 +37,6 @@ Acceptance test
 ## Notes & shoutouts
 
 I feel like the GraphQL make the APi much easier to deal with, and the only difficult part was how to setup Google map.
-The login and favorite page should have no problems if I follow the steps.
+The login and favorite page should have no problems if I follow the steps. 
+
+I have also added the acceptance test which to make sure everything rendering correctly.
