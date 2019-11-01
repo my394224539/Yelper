@@ -32,7 +32,7 @@ After I added login and favorite page
 
 Acceptance test
 
-![Walkthrough GIF](gif2.gif)
+![Walkthrough GIF](Acceptance.gif)
 
 ## Notes & shoutouts
 
