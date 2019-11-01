@@ -24,12 +24,15 @@ This is a application that use to search your favorite restaurants.
 
 ## GIF Walkthrough
 
-![Walkthrough GIF](gif.gif)
+![Walkthrough GIF](gif1.gif)
 
 After I added login and favorite page
 
 ![Walkthrough GIF](gif2.gif)
 
+Acceptance test
+
+![Walkthrough GIF](gif2.gif)
 
 ## Notes & shoutouts
 
