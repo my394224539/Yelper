@@ -1,57 +1,37 @@
-# yelper
+# Yelper
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Author: Feng Chen
 
-## Prerequisites
+This is a application that use to search your favorite restaurants.
+## Time spent
+ * Tutorials, research: 2 hours
+ * Coding required stories: 2 hours
+ * Improvement with Login and Favorite page: 1 hours
+ 
 
-You will need the following things properly installed on your computer.
+### Required
+ * [x] Search capability with at least three facets (e.g. name, category, location, price level, etc) 
+ * [x] Search should show some form of “auto-complete” as the user is typing.
+ * [x] Display detailed business information, such as:(e.g. Phone, Review Count and details, Hours)
+ * [x] Add login ability via Firebase
+ * [x] Add “Favorites” page, listing out all Favorites
+ * [x] Provide user with ability to Save/Unsave to their Favorites
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
-* [Ember CLI](https://ember-cli.com/)
-* [Google Chrome](https://google.com/chrome/)
+### Optional
 
-## Installation
+ * [x] Show location in Google Maps
+ 
 
-* `git clone <repository-url>` this repository
-* `cd yelper`
-* `npm install`
+## GIF Walkthrough
 
-## Running / Development
+![Walkthrough GIF](gif.gif)
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
+After I added login and favorite page
 
-### Code Generators
+![Walkthrough GIF](gif2.gif)
 
-Make use of the many generators for code, try `ember help generate` for more details
 
-### Running Tests
+## Notes & shoutouts
 
-* `ember test`
-* `ember test --server`
-
-### Linting
-
-* `npm run lint:hbs`
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+I feel like the GraphQL make the APi much easier to deal with, and the only difficult part was how to setup Google map.
+The login and favorite page should have no problems if I follow the steps.

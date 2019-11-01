@@ -1,15 +1,15 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li><LinkTo @route='index' class="navbar-brand">Search</LinkTo></li>
-        <li><LinkTo @route='favorites' class="navbar-brand">Favorites</LinkTo></li>
+        <li><LinkTo @class='linkTosearch' @route='index' class="navbar-brand">Search</LinkTo></li>
+        <li><LinkTo @class='linkTofavorites' @route='favorites' class="navbar-brand">Favorites</LinkTo></li>
       </ul>
     </div> 
     <div class="navbar-brand my-2 my-lg-0">
       {{#if session.isAuthenticated}}
-      Logged in as {{ session.data.authenticated.user.displayName }}<button class="btn btn-outline-dark my-2 mr-sm-2" {{action "logout"}}>Sign out</button>
+      Logged in as {{ session.data.authenticated.user.displayName }}<button class="sign-out btn btn-outline-dark my-2 mr-sm-2" {{action "logout"}}>Sign out</button>
       {{else}}
-      <button class="btn btn-outline-dark my-2 mr-sm-2" {{action "login" }}>Sign in with Google</button>
+      <button class="sign-in btn btn-outline-dark my-2 mr-sm-2" {{action "login" }}>Sign in with Google</button>
       {{/if}}
     </div>
     </nav>

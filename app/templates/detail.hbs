@@ -9,10 +9,10 @@
             <div class="card-text">Price: {{model.business.price}}</div>
             <div><small>1 = $, 2 = $$, 3 = $$$, 4 = $$$$</small></div><br>
             {{#if model.favorite}}
-            <button class="btn btn-outline-dark my-2 mr-sm-2" {{action 'unsave'}}>Unsave</button>
+            <button class="unsave btn btn-outline-dark my-2 mr-sm-2" {{action 'unsave'}}>Unsave</button>
             <div><small>Click the button to unsave it in your favorit</small></div>
             {{else}}
-            <button class="btn btn-outline-dark my-2 mr-sm-2" {{action 'save'}}>Save</button>
+            <button class="save btn btn-outline-dark my-2 mr-sm-2" {{action 'save'}}>Save</button>
             <div><small>Click the button to save it in your favorit</small></div>
             {{/if}}
             </div>
